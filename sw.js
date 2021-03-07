@@ -1,7 +1,6 @@
 const cacheName = 'my-cache';
 
 const filesToCache = [
-    '/',
     'index.html',
     'offline.html',
     'styles.css',
