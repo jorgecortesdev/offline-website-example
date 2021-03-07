@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body.off {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 48px;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.content .info {
+    color: #ff0000;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.content.off .info {
+    color: #ffff00;
+}
+
+.bulb {
+    width: 224px;
+    height: 338px;
+    margin-top: 100px;
+    background: transparent url('/bulb.svg') top right/453px 338px;
+}
+
+.bulb.off {
+    background: transparent url('/bulb.svg') top left/453px 338px;
+}
