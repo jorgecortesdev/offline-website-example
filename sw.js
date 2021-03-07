@@ -2,10 +2,10 @@ const cacheName = 'my-cache';
 
 const filesToCache = [
     '/',
-    '/index.html',
-    '/offline.html',
-    '/styles.css',
-    '/bulb.svg'
+    'index.html',
+    'offline.html',
+    'styles.css',
+    'bulb.svg'
 ];
 
 self.addEventListener('activate', event => self.clients.claim());
