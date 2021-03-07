@@ -43,9 +43,9 @@ h1 {
     width: 224px;
     height: 338px;
     margin-top: 100px;
-    background: transparent url('/bulb.svg') top right/453px 338px;
+    background: transparent url('bulb.svg') top right/453px 338px;
 }
 
 .bulb.off {
-    background: transparent url('/bulb.svg') top left/453px 338px;
+    background: transparent url('bulb.svg') top left/453px 338px;
 }
