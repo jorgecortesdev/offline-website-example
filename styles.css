@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(shadows-into-light.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html, body {
-    height: 100%;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body.off {
@@ -8,41 +17,49 @@ body.off {
     color: #ffffff;
 }
 
-h1 {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 60px 0;
+}
+
+.container > header {
+    text-align: center;
+}
+
+.container > header > h1 {
     margin: 0;
-    font-family: 'Akaya Telivigala', cursive;
-    font-size: 48px;
+    font-size: 46px;
 }
 
-.main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container > header > h1 > .state {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: larger;
+    color: #006400;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10%;
+.container > header > h1 > .state.off {
+    color: #7fffd4;
 }
 
-.content .info {
+.container > footer .info {
     color: #ff0000;
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: bold;
 }
 
-.content.off .info {
+.container.off .info {
     color: #ffff00;
 }
 
 .bulb {
     width: 224px;
     height: 338px;
-    margin-top: 100px;
     background: transparent url('bulb.svg') top right/453px 338px;
 }
 

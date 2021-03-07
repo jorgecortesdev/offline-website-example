@@ -4,7 +4,8 @@ const filesToCache = [
     'index.html',
     'offline.html',
     'styles.css',
-    'bulb.svg'
+    'bulb.svg',
+    'shadows-into-light.woff2',
 ];
 
 self.addEventListener('activate', event => self.clients.claim());
