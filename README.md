@@ -3,7 +3,7 @@
 This repository is just an example on how to make a website works without an internet connection.
 
 ## Example
-To see this code in action go to: https://xorth.github.io/offline-website-example/
+To see this code in action go to: https://jorgecortesdev.github.io/offline-website-example/
 
 ## Run the example locally
 
